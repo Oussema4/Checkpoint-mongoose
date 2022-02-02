@@ -1,0 +1,3 @@
+.home{text-align: center;}
+
+.productlist{display: flex; justify-content: space-around;flex-wrap: wrap;}

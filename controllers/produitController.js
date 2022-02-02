@@ -3,8 +3,10 @@ const Produits = require("../models/Produits")
 
 exports.addproduit=async(req,res)=>{
 
-    const {designation,quantite,prixUnitaire,prixTotal}=req.body
-    
+    let {designation,quantite,prixUnitaire,prixTotal}=req.body
+    quantite=Number(quantite);
+    prixUnitaire=Number(prixUnitaire);
+    prixTotal=Number(prixTotal)
     try {
         const produit=new Produits({
     

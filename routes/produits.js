@@ -3,15 +3,8 @@ const { addproduit, deleteproduit, getallproduits, updateproduit, getoneproduit 
 const router=express.Router()
 
 
-router.get("/test",(req,res)=>{
-
-    res.send("hello guys");
-})
-
 
 router.post("/",addproduit)
-
-
 
 router.get("/",getallproduits)
 
